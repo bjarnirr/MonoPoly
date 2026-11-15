@@ -1,0 +1,207 @@
+{
+  "pages": [
+    {
+      "name": "OSC 1-2",
+      "controls": [
+        {
+          "param": "Voice Mode",
+          "widget": "switch"
+        },
+        {
+          "param": "VCO1 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "VCO1 Oct",
+          "widget": "knob"
+        },
+        {
+          "param": "VCO1 Tune",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "VCO1 Level",
+          "widget": "fader"
+        },
+        {
+          "param": "VCO1 PulseW",
+          "widget": "knob"
+        },
+        {
+          "param": "VCO2 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "VCO2 Oct",
+          "widget": "knob"
+        },
+        {
+          "param": "VCO2 Tune",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "VCO2 Level",
+          "widget": "fader"
+        },
+        {
+          "param": "VCO2 PulseW",
+          "widget": "knob"
+        },
+        {
+          "param": "Noise",
+          "widget": "fader"
+        },
+        {
+          "param": "Master",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "OSC 3-4",
+      "controls": [
+        {
+          "param": "VCO3 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "VCO3 Oct",
+          "widget": "knob"
+        },
+        {
+          "param": "VCO3 Tune",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "VCO3 Level",
+          "widget": "fader"
+        },
+        {
+          "param": "VCO3 PulseW",
+          "widget": "knob"
+        },
+        {
+          "param": "VCO4 Wave",
+          "widget": "switch"
+        },
+        {
+          "param": "VCO4 Oct",
+          "widget": "knob"
+        },
+        {
+          "param": "VCO4 Tune",
+          "widget": "knob",
+          "polarity": "bipolar"
+        },
+        {
+          "param": "VCO4 Level",
+          "widget": "fader"
+        },
+        {
+          "param": "VCO4 PulseW",
+          "widget": "knob"
+        }
+      ]
+    },
+    {
+      "name": "FILTER",
+      "controls": [
+        {
+          "param": "Cutoff",
+          "widget": "knob"
+        },
+        {
+          "param": "Resonance",
+          "widget": "knob"
+        },
+        {
+          "param": "VCF Env",
+          "widget": "knob"
+        },
+        {
+          "param": "Key Track",
+          "widget": "knob"
+        },
+        {
+          "param": "VCF Attack",
+          "widget": "fader"
+        },
+        {
+          "param": "VCF Decay",
+          "widget": "fader"
+        },
+        {
+          "param": "VCF Sustain",
+          "widget": "fader"
+        },
+        {
+          "param": "VCF Release",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "AMP",
+      "controls": [
+        {
+          "param": "VCA Attack",
+          "widget": "fader"
+        },
+        {
+          "param": "VCA Decay",
+          "widget": "fader"
+        },
+        {
+          "param": "VCA Sustain",
+          "widget": "fader"
+        },
+        {
+          "param": "VCA Release",
+          "widget": "fader"
+        }
+      ]
+    },
+    {
+      "name": "MOD",
+      "controls": [
+        {
+          "param": "MG1 Shape",
+          "widget": "switch"
+        },
+        {
+          "param": "MG1 Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "MG2 Shape",
+          "widget": "switch"
+        },
+        {
+          "param": "MG2 Rate",
+          "widget": "knob"
+        },
+        {
+          "param": "Pitch Mod",
+          "widget": "knob"
+        },
+        {
+          "param": "Filter Mod",
+          "widget": "knob"
+        },
+        {
+          "param": "PWM Mod",
+          "widget": "knob"
+        }
+      ]
+    }
+  ],
+  "style": {
+    "background": "ff17191d",
+    "accent": "ffd31145",
+    "text": "ffffffff",
+    "muted": "ff777b84"
+  }
+}

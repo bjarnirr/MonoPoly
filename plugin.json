@@ -1,0 +1,16 @@
+{
+  "name": "MonoPoly",
+  "manufacturer": "MonoPoly Project",
+  "version": "0.1.0",
+  "format": "vst2",
+  "kind": "instrument",
+  "uid": "MnPl",
+  "numInputs": 0,
+  "numOutputs": 2,
+  "category": "Synth",
+  "file32": "VST/monopoly-arm32.so",
+  "file64": "VST/monopoly-arm64.so",
+  "description": "Four-oscillator circuit-inspired Mono/Poly recreation for MPC.",
+  "author": "MonoPoly Project",
+  "license": "MIT"
+}
