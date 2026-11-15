@@ -1,0 +1,515 @@
+{
+  "name": "MonoPoly",
+  "vendor": "MonoPoly Project",
+  "uid": "MnPl",
+  "uidInt": 1299075180,
+  "version": 100,
+  "isInstrument": true,
+  "numInputs": 0,
+  "numOutputs": 2,
+  "numPrograms": 4,
+  "programs": [
+    "Init Mono",
+    "Mono Bass",
+    "Four Voice",
+    "PWM Ensemble"
+  ],
+  "params": [
+    {
+      "index": 0,
+      "id": null,
+      "name": "Voice Mode",
+      "label": "",
+      "display": "Mono",
+      "default": 0.0,
+      "automatable": true,
+      "kind": "choice",
+      "choices": [
+        "Mono",
+        "2 Voice",
+        "4 Voice"
+      ]
+    },
+    {
+      "index": 1,
+      "id": null,
+      "name": "VCO1 Wave",
+      "label": "",
+      "display": "Saw",
+      "default": 0.333333,
+      "automatable": true,
+      "kind": "choice",
+      "choices": [
+        "Triangle",
+        "Saw",
+        "Pulse",
+        "PWM"
+      ]
+    },
+    {
+      "index": 2,
+      "id": null,
+      "name": "VCO1 Oct",
+      "label": "oct",
+      "display": "0",
+      "default": 0.666667,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 3,
+      "id": null,
+      "name": "VCO1 Tune",
+      "label": "ct",
+      "display": "0.0",
+      "default": 0.5,
+      "automatable": true,
+      "kind": "float",
+      "choices": []
+    },
+    {
+      "index": 4,
+      "id": null,
+      "name": "VCO1 Level",
+      "label": "%",
+      "display": "75",
+      "default": 0.75,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 5,
+      "id": null,
+      "name": "VCO1 PulseW",
+      "label": "%",
+      "display": "50",
+      "default": 0.5,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 6,
+      "id": null,
+      "name": "VCO2 Wave",
+      "label": "",
+      "display": "Saw",
+      "default": 0.333333,
+      "automatable": true,
+      "kind": "choice",
+      "choices": [
+        "Triangle",
+        "Saw",
+        "Pulse",
+        "PWM"
+      ]
+    },
+    {
+      "index": 7,
+      "id": null,
+      "name": "VCO2 Oct",
+      "label": "oct",
+      "display": "0",
+      "default": 0.666667,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 8,
+      "id": null,
+      "name": "VCO2 Tune",
+      "label": "ct",
+      "display": "0.0",
+      "default": 0.5,
+      "automatable": true,
+      "kind": "float",
+      "choices": []
+    },
+    {
+      "index": 9,
+      "id": null,
+      "name": "VCO2 Level",
+      "label": "%",
+      "display": "55",
+      "default": 0.55,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 10,
+      "id": null,
+      "name": "VCO2 PulseW",
+      "label": "%",
+      "display": "50",
+      "default": 0.5,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 11,
+      "id": null,
+      "name": "VCO3 Wave",
+      "label": "",
+      "display": "Saw",
+      "default": 0.333333,
+      "automatable": true,
+      "kind": "choice",
+      "choices": [
+        "Triangle",
+        "Saw",
+        "Pulse",
+        "PWM"
+      ]
+    },
+    {
+      "index": 12,
+      "id": null,
+      "name": "VCO3 Oct",
+      "label": "oct",
+      "display": "0",
+      "default": 0.666667,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 13,
+      "id": null,
+      "name": "VCO3 Tune",
+      "label": "ct",
+      "display": "0.0",
+      "default": 0.5,
+      "automatable": true,
+      "kind": "float",
+      "choices": []
+    },
+    {
+      "index": 14,
+      "id": null,
+      "name": "VCO3 Level",
+      "label": "%",
+      "display": "55",
+      "default": 0.55,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 15,
+      "id": null,
+      "name": "VCO3 PulseW",
+      "label": "%",
+      "display": "50",
+      "default": 0.5,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 16,
+      "id": null,
+      "name": "VCO4 Wave",
+      "label": "",
+      "display": "Saw",
+      "default": 0.333333,
+      "automatable": true,
+      "kind": "choice",
+      "choices": [
+        "Triangle",
+        "Saw",
+        "Pulse",
+        "PWM"
+      ]
+    },
+    {
+      "index": 17,
+      "id": null,
+      "name": "VCO4 Oct",
+      "label": "oct",
+      "display": "0",
+      "default": 0.666667,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 18,
+      "id": null,
+      "name": "VCO4 Tune",
+      "label": "ct",
+      "display": "0.0",
+      "default": 0.5,
+      "automatable": true,
+      "kind": "float",
+      "choices": []
+    },
+    {
+      "index": 19,
+      "id": null,
+      "name": "VCO4 Level",
+      "label": "%",
+      "display": "55",
+      "default": 0.55,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 20,
+      "id": null,
+      "name": "VCO4 PulseW",
+      "label": "%",
+      "display": "50",
+      "default": 0.5,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 21,
+      "id": null,
+      "name": "Noise",
+      "label": "%",
+      "display": "0",
+      "default": 0.0,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 22,
+      "id": null,
+      "name": "Cutoff",
+      "label": "Hz",
+      "display": "9000",
+      "default": 0.898102,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 23,
+      "id": null,
+      "name": "Resonance",
+      "label": "%",
+      "display": "15",
+      "default": 0.157895,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 24,
+      "id": null,
+      "name": "VCF Env",
+      "label": "%",
+      "display": "25",
+      "default": 0.25,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 25,
+      "id": null,
+      "name": "Key Track",
+      "label": "%",
+      "display": "0",
+      "default": 0.0,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 26,
+      "id": null,
+      "name": "VCF Attack",
+      "label": "ms",
+      "display": "10",
+      "default": 0.270346,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 27,
+      "id": null,
+      "name": "VCF Decay",
+      "label": "ms",
+      "display": "300",
+      "default": 0.669679,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 28,
+      "id": null,
+      "name": "VCF Sustain",
+      "label": "%",
+      "display": "0",
+      "default": 0.0,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 29,
+      "id": null,
+      "name": "VCF Release",
+      "label": "ms",
+      "display": "300",
+      "default": 0.669679,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 30,
+      "id": null,
+      "name": "VCA Attack",
+      "label": "ms",
+      "display": "10",
+      "default": 0.270346,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 31,
+      "id": null,
+      "name": "VCA Decay",
+      "label": "ms",
+      "display": "250",
+      "default": 0.648272,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 32,
+      "id": null,
+      "name": "VCA Sustain",
+      "label": "%",
+      "display": "75",
+      "default": 0.75,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 33,
+      "id": null,
+      "name": "VCA Release",
+      "label": "ms",
+      "display": "400",
+      "default": 0.703455,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 34,
+      "id": null,
+      "name": "MG1 Shape",
+      "label": "",
+      "display": "Triangle",
+      "default": 0.333333,
+      "automatable": true,
+      "kind": "choice",
+      "choices": [
+        "Sine",
+        "Triangle",
+        "Ramp",
+        "Square"
+      ]
+    },
+    {
+      "index": 35,
+      "id": null,
+      "name": "MG1 Rate",
+      "label": "Hz",
+      "display": "5.00",
+      "default": 0.719903,
+      "automatable": true,
+      "kind": "float",
+      "choices": []
+    },
+    {
+      "index": 36,
+      "id": null,
+      "name": "MG2 Shape",
+      "label": "",
+      "display": "Sine",
+      "default": 0.0,
+      "automatable": true,
+      "kind": "choice",
+      "choices": [
+        "Sine",
+        "Triangle",
+        "Ramp",
+        "Square"
+      ]
+    },
+    {
+      "index": 37,
+      "id": null,
+      "name": "MG2 Rate",
+      "label": "Hz",
+      "display": "0.70",
+      "default": 0.412551,
+      "automatable": true,
+      "kind": "float",
+      "choices": []
+    },
+    {
+      "index": 38,
+      "id": null,
+      "name": "Pitch Mod",
+      "label": "%",
+      "display": "0",
+      "default": 0.0,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 39,
+      "id": null,
+      "name": "Filter Mod",
+      "label": "%",
+      "display": "0",
+      "default": 0.0,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 40,
+      "id": null,
+      "name": "PWM Mod",
+      "label": "%",
+      "display": "0",
+      "default": 0.0,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    },
+    {
+      "index": 41,
+      "id": null,
+      "name": "Master",
+      "label": "%",
+      "display": "70",
+      "default": 0.7,
+      "automatable": true,
+      "kind": "int",
+      "choices": []
+    }
+  ]
+}
