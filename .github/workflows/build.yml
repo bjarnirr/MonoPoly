@@ -1,0 +1,24 @@
+name: Build MonoPoly for MPC
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build ARM32 + ARM64 and validate
+        run: |
+          python tools/build.py plugins/MonoPoly
+          python tools/validate.py plugins/MonoPoly
+      - name: Show result
+        run: find plugins/MonoPoly/build -type f | sort
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MonoPoly-for-MPC
+          path: plugins/MonoPoly/build/MonoPoly Project - VST - MonoPoly
